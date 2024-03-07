@@ -43,10 +43,10 @@ while True:
             try: 
                 [notes, wiki] = server.get_notes(topic) # calling server and sending the topic we want to fetch the corresponding notes
 
-                if not notes and len(wiki) == 0: # if notes dictionary is empty
+                if not notes and len(wiki) == 0: # if notes dictionary and wiki list (with link and summary) are empty
                     print("\nThere weren't notes under topic name:", topic, "\n")
                 else:
-                    
+                    # iterating through notes and/or wiki list to show the elements to user
                     if (notes):
                         for note in notes:
                             print(note, "\n" + notes[note]["text"] + "\n" + notes[note]["timestamp"], "\n")
