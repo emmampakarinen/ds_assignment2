@@ -11,7 +11,9 @@ xml_data = "notes.xml"
 # - Security: this is a quite simple system but security has been taken into consideration by checking for example user inputs in client side
 # - scalability: using multiple servers and tested the system by using 2 users simultaneously
 # - failure handling: using try-except blocks on the code for the system to recover from errors and avoiding the program from crashing
-# - transparency: calls to server and APIs are not shown to client/users of the system. 
+# - transparency: calls to server and APIs are not shown to client/users of the system.
+
+# references: https://docs.python.org/3/library/xmlrpc.html, https://docs.python.org/3/library/xml.etree.elementtree.html, https://requests.readthedocs.io/en/master/
 
 def add_note(note_topic, note_name, note_text, timestamp):
     try:
